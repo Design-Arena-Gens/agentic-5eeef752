@@ -1,0 +1,33 @@
+:root{--bg:#0b0f1a;--panel:#101726;--muted:#6b7280;--text:#e5e7eb;--accent:#6ee7b7;--accent2:#60a5fa;--danger:#ef4444}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(180deg,#0b0f1a,#0c1324);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:20px}
+.h1{font-size:28px;margin:0;font-weight:700}
+.badge{background:rgba(255,255,255,.06);padding:6px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.08)}
+.grid{display:grid;gap:14px}
+.card{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{background:#18223a;color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:10px 14px;cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,var(--accent2),var(--accent));color:#071017;font-weight:700}
+.btn.danger{background:linear-gradient(135deg,#fb7185,#ef4444);color:#fff}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.label{font-size:12px;color:var(--muted)}
+.row{display:flex;gap:12px;align-items:center}
+.slider{width:180px}
+.steps{display:grid;grid-template-columns:120px repeat(16,1fr);gap:10px;align-items:center}
+.track{display:contents}
+.cell{height:32px;border-radius:8px;border:1px solid rgba(255,255,255,.08);background:#111827;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:11px;color:#94a3b8}
+.cell.on{background:linear-gradient(135deg,#2563eb55,#22d3ee55);border-color:#60a5fa}
+.cell.play{outline:2px solid var(--accent2)}
+.track-name{font-weight:600;color:#cbd5e1}
+.section-title{margin:6px 0 12px 2px;color:#cbd5e1;font-weight:700}
+.small{font-size:12px;color:#9ca3af}
+.pill{padding:6px 10px;border-radius:999px;background:#0f172a;border:1px solid rgba(255,255,255,.08)}
+.group{display:flex;gap:10px;flex-wrap:wrap}
+.sep{height:1px;background:rgba(255,255,255,.06);margin:12px 0}
+.footer{margin-top:18px;color:#94a3b8;font-size:12px}
+.preset-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+input[type="range"]{accent-color:#60a5fa}
+select{background:#0f172a;color:var(--text);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:8px}
